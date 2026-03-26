@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+
+    /* Warm off-white palette */
+    --background: 0.964 0.012 89;
+    --foreground: 0.175 0 0;
+    --card: 0.935 0.018 85;
+    --card-foreground: 0.175 0 0;
+    --popover: 0.964 0.012 89;
+    --popover-foreground: 0.175 0 0;
+    --primary: 0.73 0.025 65;
+    --primary-foreground: 0.982 0.008 85;
+    --secondary: 0.935 0.018 85;
+    --secondary-foreground: 0.175 0 0;
+    --muted: 0.92 0.014 82;
+    --muted-foreground: 0.56 0 0;
+    --accent: 0.85 0.012 80;
+    --accent-foreground: 0.175 0 0;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.85 0.012 80;
+    --input: 0.85 0.012 80;
+    --ring: 0.73 0.025 65;
+
+    --header-bg: 0.935 0.018 85;
+    --canvas-bg: 0.964 0.012 89;
+    --text-heading: 0.175 0 0;
+    --text-body: 0.38 0 0;
+    --text-muted: 0.56 0 0;
+    --divider: 0.85 0.012 80;
+    --btn-fill: 0.73 0.025 65;
+    --btn-text: 0.982 0.008 85;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "DM Sans", sans-serif;
+  }
+}
